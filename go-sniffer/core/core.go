@@ -20,7 +20,7 @@ func (c *Core) Run() {
 	//parse command
 	cmd := NewCmd(plug)
 	cmd.Run()
-	
-	//dispatch
+
+	//dispatch enter
 	NewDispatch(plug, cmd).Capture()
 }
